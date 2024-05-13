@@ -1,54 +1,82 @@
 product = input()
-city = input()
+town = input()
 quantity = float(input())
 
-if city == "Sofia":
+price = 0
+
+if town == "Sofia":
     if product == "coffee":
         price = 0.50
-        print(price * quantity)
     elif product == "water":
         price = 0.80
-        print(price * quantity)
     elif product == "beer":
         price = 1.20
-        print(price * quantity)
     elif product == "sweets":
         price = 1.45
-        print(price * quantity)
     elif product == "peanuts":
         price = 1.60
-        print(price * quantity)
-
-if city == "Plovdiv":
+    else:
+        print("unknown")
+elif town == "Plovdiv":
     if product == "coffee":
         price = 0.40
-        print(price * quantity)
     elif product == "water":
         price = 0.70
-        print(price * quantity)
     elif product == "beer":
         price = 1.15
-        print(price * quantity)
     elif product == "sweets":
         price = 1.30
-        print(price * quantity)
     elif product == "peanuts":
         price = 1.50
-        print(price * quantity)
-
-if city == "Varna":
+    else:
+        print("unknown")
+elif town == "Varna":
     if product == "coffee":
         price = 0.45
-        print(price * quantity)
     elif product == "water":
         price = 0.70
-        print(price * quantity)
     elif product == "beer":
         price = 1.10
-        print(price * quantity)
     elif product == "sweets":
         price = 1.35
-        print(price * quantity)
     elif product == "peanuts":
         price = 1.55
-        print(price * quantity)
+    else:
+        print("unknown")
+else:
+    print("unknown")
+
+
+if price == 0:
+    print("unknown")
+else:
+    price *= quantity
+    print(price)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
