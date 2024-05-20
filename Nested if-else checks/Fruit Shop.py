@@ -77,8 +77,8 @@
 # else:
 #     print("error")
 
-# this is not working if the fruit name is wrong
 
+# this is not working if the fruit name is wrong
 import time
 start_time = time.time()
 
@@ -133,10 +133,8 @@ elif day_of_week == "Monday" or day_of_week == "Tuesday" or day_of_week == "Wedn
         total_price = pineapple * quantity
     elif fruit == "grapes":
         grapes = 3.85
-
         total_price = grapes * quantity
     print(f"{total_price:.2f}")
-
 
 else:
     print("error")
@@ -146,7 +144,7 @@ print(total_price)
 print("time elapsed: {:.2f}s".format(time.time() - start_time))
 
 
-
+#this code is working in any case
 # import time
 #
 # start_time = time.time()
